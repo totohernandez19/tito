@@ -1,0 +1,5 @@
+UPDATE `jobdet` SET `paid`= (SELECT paid FROM job WHERE job.id = jobdet.jobid);
+
+
+
+UPDATE `jobdet` SET `paid`='y' WHERE jobdet.id IN (SELECT jobdet.id FROM `jobdet` inner join job on jobdet.jobid = job.id and jobdet.timestamp = job.timestamp and job.paid = 'y');

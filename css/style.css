@@ -1,0 +1,480 @@
+/* GENERAL CSS */
+@media screen and (max-width: 1000px) {
+  .nebula {
+     width: 100%;
+     overflow: hidden;
+     margin: 0 -150px 0 -150px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: #062354;
+  color: #062354;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:0;
+}
+
+textarea {
+    padding: 2px;
+    line-height: 1;
+    border-radius: 5px;
+    box-sizing: border-box;
+} 
+select {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+input[type=date] {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 8px 5px;
+    border-radius: 5px;
+}
+input[type=text] {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+table {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 100;
+    display: block;
+    padding: 10px;
+    width: 720px;
+    height: 470px;
+    position: absolute;
+    left: 325px;
+    top : 130px;
+    text-align: left;
+    overflow: scroll;
+}
+h2 {
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+button[type=submit] {
+    width: 65%;
+    padding: 12px 8px;
+    margin-left: 80px;
+    margin-top: auto;
+    margin-right: -20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #33d439;
+    color: white;
+    font-size: 15px;
+}
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+img {
+  vertical-align: middle;
+  max-width:100%; 
+  max-height: 100%;
+  padding: 5px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.center_text{
+  font-style: italic;
+  font-size: medium;
+  padding: 20px;
+}
+
+.left_panel_text{
+  text-align: left; 
+  padding: 40px; 
+}
+
+.right_panel_text{
+  text-align: left; 
+  padding: 10px; 
+  margin: 10px;
+  font-size: medium;
+}
+
+#left_panel{
+  position: fixed;
+  background: #FCFBFA; 
+  width: 15%;
+  height: 93%; 
+  border: 3px solid #DDDAD7;
+  left: 0px;
+  top : 0px; 
+  margin: 5px;
+}
+
+#topcenter_panel, .topcenter_text{
+  position: fixed;
+  background: #FCFBFA;
+  width: 84%;
+  height: 10%;
+  border: 3px solid #DDDAD7;
+  left: 210px;
+  /**left: 207px;**/
+  top : 0px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+#center_panel{  
+  position: fixed;
+  background: #FCFBFA;
+  width: 84%;
+  height: 83%;
+  border: 3px solid #DDDAD7;
+  left: 210px;
+  top : 65px; 
+  margin: 5px;
+}
+
+#footer{
+  position: fixed;
+  background: #FCFBFA;
+  width: 99%;  
+  height: 4.3%;
+  border: 3px solid #DDDAD7;
+  left: 0px;
+  /**left: 193px;**/
+  /**left: 207px;**/
+  bottom: 2px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-variant-caps: all-petite-caps;
+} 
+
+#right_panel{
+  position: fixed;
+  overflow: auto;
+  background: #FCFBFA;
+  width: 16%;
+  height: 98%; 
+  border: 3px solid #DDDAD7;
+  right: 0px;
+  top : 0px; 
+  margin: 5px;
+} 
+
+.topcenter_h1{
+  text-align: center;
+  width: 75%;
+  height: 10%;
+  position: absolute;
+  left: 310px;
+  top : 0px;
+  margin-top:10px;
+}
+
+/** -------- LOGIN ----------- **/
+#text,#user,#pass,#fname,#lname{
+  height: 25px;
+  border-radius: 5px;
+  padding: 4px;
+  border: none;
+}
+#button{
+  padding: 10px;
+  width: 100px;
+  color: #062354;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+} 
+#box{
+  background-color: #062354;
+  width: 350px;
+  padding: 20px;
+  margin: 90px 250px;
+  border-radius: 5px;
+  color: white;
+}
+.container {
+  display: inline-table;
+  padding-right: 10px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.fieldName {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 4px;
+  font-size: 16px;
+  color: white;
+}
+.data {
+  display: table-cell;
+}
+
+/* SEARCH INPUT FOR DISPLAY DATA TABLE */
+#priceInput,#markupInput, #jobsInput, #jobdetInput {
+  position:fixed;
+  width: 65%;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+}
+
+#reportInput {
+  position:fixed;
+  width: 40%;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+}
+
+/** DISPLAY DATA TABLES **/
+#tbl_price, #tbl_jobdet, #tbl_job, #tbl_markup, #tbl_report{
+  position:fixed;
+  top : 145px;
+  left: 230px;
+  width: 80%;
+  height:57%;
+  overflow-x:auto; 
+  overflow-y:auto; 
+  background: #FCFBFA;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+#tbl_price td, #tbl_price th,#tbl_markup td, #tbl_markup th, 
+#tbl_jobdet td, #tbl_jobdet th, #tbl_job td, #tbl_job th,
+#tbl_report td, #tbl_report th {
+  border: 1px solid #ddd;
+  padding: 5px 5px;
+}
+
+#tbl_price th,#tbl_markup th, #tbl_jobdet th, #tbl_job th, #tbl_report th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #578adf;
+  color: white;
+}
+
+#tbl_price tr:nth-child(odd),#tbl_markup tr:nth-child(odd), 
+#tbl_jobdet tr:nth-child(odd), #tbl_job tr:nth-child(odd),
+#tbl_report tr:nth-child(odd) {
+  background-color: #cfddf6;
+}
+
+#tbl_price tr:hover,#tbl_markup tr:hover,
+#tbl_jobdet tr:hover,#tbl_job tr:hover, 
+#tbl_report tr:hover {
+  background-color: #ddd;
+}
+
+#btn-search {
+  border:none;
+  border-radius: 5px;
+  color: white;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #578adf;
+}
+
+/** SHOW DROP DOWN **/
+#show_dropdown {float:right;}
+
+.dropbtn {      
+  background-color: #578adf; 
+  border: 1px solid #062354; 
+  color: white;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 13px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 105;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 200;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 200;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover { background-color: #ddd; }
+.dropdown:hover .dropdown-content { display: block; }
+.dropdown:hover .dropbtn { background-color: #ddd; }
+
+/** -- SAVE CLOSE ADD BACK BUTTONS **/
+#btn-popup-save,#btn-popup-close{border-radius: 5px;}
+#btn-back,#btn-add,#btn-print{border-radius: 5px;}
+
+
+/** -- SELECT DROPDOWN -- **/
+:root {
+  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  --gray: #34495e;
+  --darkgray:  #578adf;
+}
+
+#sel-search {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+
+/* Remove IE arrow */
+#sel-search:-ms-expand {
+  display: none;
+}
+
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width:200px;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden; 
+  float:left; 
+  height: 50px;
+  margin: 10px 5px 10px 10px;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #87ace8;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #fff;
+}
+
+#sel-search>option{
+    color: #555;
+    background-color: rgb(247, 247, 247);
+    background-image: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    height: 100px;
+    padding: 25px;
+    border: 1px solid rgb(41, 18, 18);
+}
+
+/** TEXT TOTAL - BOTTOM TEXT **/
+#div-tot-addback{
+  width:65%; 
+  position:fixed; 
+  bottom:50px;
+  left:230px;
+}
+
+#div-total{
+  position: fixed;
+  width:60%; 
+  bottom: 40px;
+  right: 5px; 
+}
+
+#p-total{
+  color: darkblue;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+/** ADD AND BACK BUTTON **/
+.btn-group {
+  position: fixed; 
+  bottom: 0px; 
+  width:20%; 
+}
+
+.btn-group button {
+  background-color: #578adf; /* Green background */
+  border: 1px solid #062354; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+}
+.btn-group1 button {
+  background-color: #578adf; /* Green background */
+  border: 1px solid #062354; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #ddd;
+}
+/** END **/
